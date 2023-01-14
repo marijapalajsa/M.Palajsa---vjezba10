@@ -1,0 +1,453 @@
+body {
+    margin: 0;
+    background-image: url("neutral.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+h1 {
+    font-family: verdana;
+    padding: 30px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: azure;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 3px black;
+}
+header{     
+    background-color: #4862a4;
+}
+/* --------------------------------------------------------------------------- */
+
+#akvarij {
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 1470px;
+    height: 500px;
+    box-shadow: 5px 5px 10px 4px #0005;
+    background-color: rgb(162, 201, 207);
+}
+#akvarij div{
+    width: 240px;
+    height: 120px;
+    border: 3px solid #4862a4;;
+    background-color: rgb(53, 112, 133);  
+}
+
+
+
+#riba1 {
+    animation: anim1 20s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+#riba2 {
+    margin-left: 1225px;
+    margin-top: -20px;
+    animation: anim2 19s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+}
+#riba3 {
+    margin-left: 220px;
+    margin-top: 0px;
+    animation: anim3 15s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#riba4 {
+    margin-left: 840px;
+    margin-top: 15px;
+    animation: anim4 20s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+}
+#riba5 {
+    margin-left: 770px;
+    margin-top: -400px;
+    animation: anim5 15s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+#riba1, #riba2, #riba3, #riba4, #riba5 {
+    width: 240px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+#riba1 img {
+    width: 70%;
+    height: 70%;
+}
+#riba2 img, #riba4 img, #riba5 img   {
+    width: 90%;
+    height: 90%;
+}
+#riba3 img  {
+    width: 140%;
+    height: 140%;
+}
+
+
+/* --------------------------------------------------------------------------- */
+@keyframes anim1 {
+    0% {}
+    10% {
+        transform: translate(0, 150px);
+        background-color: rgb(10, 21, 68);
+    }
+    20% {
+        transform: translate(370px, 150px);
+        background-color: rgb(41, 57, 130);
+    }
+    35% {
+        transform: translate(530px, 200px);
+        background-color: rgb(95, 114, 200);
+    }
+    50% {
+        transform: translate(730px, 375px);
+        background-color: rgb(105, 124, 207);
+    }
+    70% {
+        transform: translate(950px, 200px);
+        background-color: rgb(114, 127, 183);
+    }
+    90% {
+        transform: translate(1225px, 150px);
+        background-color: rgb(137, 148, 199);
+        border-radius: 70%;
+    }
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(162, 201, 207);
+        border-radius: 50%;
+    }    
+}
+
+
+@keyframes anim2 {
+    0% {}
+    10% {
+        transform: translate(0, 120px);
+        background-color: rgb(110, 179, 208);
+        border-radius: 80%;
+    }
+    25% {
+        transform: translate(-190px, 120px);
+        background-color: rgb(43, 91, 111);
+        border-radius: 100%;
+    }
+    40% {
+        transform: translate(-560px, -50px);
+        background-color: rgb(69, 25, 188);
+    }
+    55% {
+        transform: translate(-720px, -105px);
+        background-color: rgb(23, 132, 183);
+    }
+    65% {
+        transform: translate(-920px, -105px);
+        background-color: rgb(106, 77, 251);
+    }
+    80% {
+        transform: translate(-1000px, -100px);
+        background-color: rgb(6, 168, 237);
+    }
+    90% {
+        transform: translate(-1230px, -70px);
+        background-color: rgb(65, 131, 160);
+        border-radius: 80%;
+    }
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(190, 222, 227);
+        border-radius: 50%;
+    }     
+}
+
+@keyframes anim3 {
+    0% {}
+    15% {
+        transform: translate(0px, 70px);
+        background-color: rgb(7, 52, 213);
+    }
+    30% {
+        transform: translate(310px, -130px);
+        background-color: rgb(57, 92, 215);
+    }
+    45% {
+        transform: translate(810px, -170px);
+        background-color: rgb(70, 181, 245);
+    }
+    60% {
+        transform: translate(1005px, -100px);
+        background-color: rgb(61, 44, 168);
+    }
+    80% {
+        transform: rotatey(180deg);
+        background-color: rgb(5, 168, 208);
+        border-radius: 70%;
+    }
+    90% {
+        transform: translate(-220px, -70px);
+        background-color: rgb(115, 110, 201);
+        border-radius: 50%;
+    }
+    100% {
+        transform: rotate(180deg);
+        background-color: rgb(190, 222, 227);
+        border-radius: 80%;
+    }     
+}
+
+@keyframes anim4 {
+    0% {}
+    10% {
+        transform: translate(-240px, -50px);
+        background-color: rgb(9, 27, 92);
+    }
+    30% {
+        transform: translate(-580px, -80px);
+        background-color: rgb(50, 83, 201);
+    }
+    50% {
+        transform: translate(-840px, -270px);
+        background-color: rgb(100, 199, 224);
+    }
+    70% {
+        transform: translate(390px, -280px) rotateY(180deg);
+        background-color: rgb(14, 89, 108);
+        border-radius: 70%;
+    }
+    90% {
+        transform: translate(-220px, -200px) ;
+        background-color: rgb(3, 195, 243);
+        border-radius: 70%;
+    }
+    100% {
+        transform: rotate(360deg) ;
+        background-color: rgb(52, 12, 250);
+        border-radius: 40%;
+    }
+}
+
+@keyframes anim5 {
+    0% {}
+    20% {
+        transform: translate(-200px, 80px);
+        background-color: rgb(95, 205, 227);
+    }
+    40% {
+        transform: translate(-430px, -75px) ;
+        background-color: rgb(14, 89, 104);
+    }
+    60% {
+        transform: translate(-770px, -85px);
+        background-color: rgb(12, 15, 187);
+    }
+    80% {
+        transform: translate(-360px, 275px) rotateY(180deg);
+        background-color: rgb(81, 156, 193);
+    
+    }
+    90% {
+        transform: translate(450px, 150px);
+        background-color: rgb(40, 31, 125);
+        border-radius: 70%;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: rgb(47, 150, 234);
+        border-radius: 40%;
+    }
+}
+/* --------------------------------------------------------------------------- */
+
+.aqslik {
+    width: 90%;
+    padding: 30px;
+    margin: 50px auto;	 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 15px 2px rgb(9, 70, 121);
+    transition: 2s;
+}
+.box img{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+}
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+
+
+/* --------------------------------------------------------------------------- */
+#slagalica {
+    width: 800px;
+    height: 800px;
+    border: 15px solid  #4862a4;
+    border-radius: 20px;
+    margin: -18px 180px 180px;
+    margin-left: 22%;
+}
+
+#slagalica div {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    float: left;
+    animation: slaganim 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slaganim {
+    to {transform: none;}
+}
+
+#slagalica div:nth-child(13) {
+    transform: translate(200px, 0);
+    animation-delay: 2s;
+}
+
+#slagalica div:nth-child(14) {
+    transform: translate(0, -200px);
+    animation-delay: 4s;
+}
+
+#slagalica div:nth-child(10) {
+    transform: translate(-200px, 0);
+    animation-delay: 8s;
+}
+
+#slagalica div:nth-child(9) {
+    transform: translate(0, -200px);
+    animation-delay: 10s;
+}
+
+#slagalica div:nth-child(5) {
+    transform: translate(0, -200px);
+    animation-delay: 12s;
+}
+
+#slagalica div:nth-child(1) {
+    transform: translate(200px, 0);
+    animation-delay: 14s;
+}
+
+#slagalica div:nth-child(2) {
+    transform: translate(0, 200px);
+    animation-delay: 16s;
+}
+
+#slagalica div:nth-child(6) {
+    transform: translate(200px, 0);
+    animation-delay: 18s;
+}
+
+#slagalica div:nth-child(7) {
+    transform: translate(0, -200px);
+    animation-delay: 20s;
+}
+
+#slagalica div:nth-child(3) {
+    transform: translate(200px, 0);
+    animation-delay: 22s;
+}
+
+#slagalica div:nth-child(4) {
+    transform: translate(0, 200px);
+    animation-delay: 24s;
+}
+
+#slagalica div:nth-child(8) {
+    transform: translate(0, 200px);
+    animation-delay: 28s;
+}
+
+#slagalica div:nth-child(12) {
+    transform: translate(-200px, 0);
+    animation-delay: 30s;
+}
+
+#slagalica div:nth-child(11) {
+    transform: translate(0, 200px);
+    animation-delay: 32s;
+}
+#slagalica div:nth-child(15) {
+    transform: translate(200px, 0);
+    animation-delay: 34s;
+}
+
+/* --------------------------------------------------------------------------- */
+.link {
+    width: 90%;
+    height: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 10px solid  #dde0e6;
+    box-shadow: 5px 5px 10px 4px #0005;
+    background-color: rgb(98, 152, 85);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;	
+}
+
+.link div {
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    border: 3px solid #c0c9de;
+    background-color: rgb(111, 160, 82); 
+    margin-top: 50px;
+}
+.pom {
+    animation: linkic 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pom a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pom:first-child a:hover{
+    background-color: rgb(10, 80, 141)  
+}
+
+
+@keyframes linkic {
+    0% {}
+    50% {
+        transform: translate(480px, 0px);
+        background-color: rgb(225, 158, 194);
+    }
+
+    100% {
+        transform: translate(-480px, 0px);
+        background-color: rgb(79, 190, 136);
+    }
+}
